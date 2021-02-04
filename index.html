@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styling.css" />
+
+    <title>Stopwatch App</title>
+  </head>
+  <body>
+    <!-- title div -->
+    <div class="container-fluid">
+      <div id="header">Stopwatch</div>
+    </div>
+
+    <!-- laptime div -->
+    <div id="lap">
+      <span id="lapminute">00</span>: <span id="lapsecond">00</span>:
+      <span id="lapcentisecond">00</span>
+    </div>
+
+    <!-- time div -->
+    <div id="time">
+      <span id="timeminute">00</span>: <span id="timesecond">00</span>:
+      <span id="timecentisecond">00</span>
+    </div>
+
+    <!-- controls -->
+    <div id="controlsContainer" class="row">
+      <div class="col-sm-2 offset-sm-4">
+        <div id="startButton" class="control">Start</div>
+        <div id="stopButton" class="control">Stop</div>
+        <div id="resumeButton" class="control">Resume</div>
+      </div>
+
+      <div class="col-sm-2">
+        <div id="lapButton" class="control">Lap</div>
+        <div id="resetButton" class="control">Reset</div>
+      </div>
+
+      <!-- laps -->
+      <div id="laps"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="stopwatch.js"></script>
+  </body>
+</html>

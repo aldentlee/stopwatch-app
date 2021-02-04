@@ -1,0 +1,69 @@
+body {
+  background: url(images/lone-tree-1934897_1280.jpg) center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* title */
+#header {
+  text-align: center;
+  font-size: 7vw;
+}
+
+/* lap */
+#lap {
+  position: relative;
+  left: 80%;
+  /* text-align: right; */
+  font-size: 4vw;
+}
+
+#time {
+  /* text-align: center; */
+  position: relative;
+  left: 27%;
+  font-size: 10vw;
+}
+
+/* buttons */
+#controlsContainer {
+  margin-bottom: 100px;
+}
+
+.control {
+  color: #fff;
+  background-color: #d7a04e;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 100%;
+  text-align: center;
+  padding: 20% 0;
+  font-size: 2.5vw;
+  cursor: pointer;
+}
+
+.control:active {
+  background-color: #fff;
+  color: #d7a04e;
+}
+
+#laps {
+  max-height: 270px;
+  overflow-y: scroll;
+}
+
+.lap {
+  height: 50px;
+  border-bottom: 1px solid white;
+  margin: 15px;
+}
+
+.laptimeTitle {
+  font-size: 1.5em;
+  float: left;
+}
+
+.laptime {
+  font-size: 2em;
+  float: right;
+}
